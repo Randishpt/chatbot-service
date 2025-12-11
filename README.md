@@ -15,15 +15,7 @@ A powerful, AI-driven inventory management chatbot service designed to facilitat
 -   **🧠 Contextual Conversations**: Remembers conversation history for a natural, human-like chatting experience.
 -   **⚡ High Performance**: Built on Express.js with optimized audio processing and cleanup.
 
-## 🛠️ Architecture
 
-```mermaid
-graph LR
-    User[User / Client App] <-->|Voice/Text| Chatbot[Chatbot Service]
-    Chatbot <-->|Inference| Groq[Groq Cloud API]
-    Chatbot <-->|Query Stock| MCPA[MCP A (Inventory)]
-    Chatbot <-->|Place Order| MCPB[MCP B (Orders)]
-```
 
 ## 📋 Prerequisites
 
