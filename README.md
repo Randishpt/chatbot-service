@@ -35,13 +35,37 @@ Before you begin, ensure you have the following installed:
 
 ## 🔧 Installation
 
-1.  **Clone the repository** (if applicable) or navigate to the project directory:
+To run the full system, you need to set up the Chatbot Service alongside its two microservices.
+
+1.  **Clone the repositories**:
+    It is recommended to clone these into the same parent directory.
+
     ```bash
-    cd chatbot-service
+    # 1. Chatbot Service (Main Interface)
+    # If you haven't already:
+    # git clone <your-chatbot-repo-url>
+    
+    # 2. MCP A (Inventory/Query Service)
+    git clone https://github.com/Randishpt/mcp-a.git
+    
+    # 3. MCP B (Order/Modify Service)
+    git clone https://github.com/Randishpt/mcp-b.git
     ```
 
-2.  **Install dependencies**:
+2.  **Install Dependencies**:
+    You must install dependencies for **all three** services.
+
     ```bash
+    # For Chatbot Service
+    cd chatbot-service
+    npm install
+    
+    # For MCP A
+    cd ../mcp-a
+    npm install
+    
+    # For MCP B
+    cd ../mcp-b
     npm install
     ```
 
